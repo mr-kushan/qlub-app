@@ -66,3 +66,6 @@ git clone https://github.com/mr-kushan/qlub-app.git
 cd qlub-app
 npm install
 
+### ▶️ Run Locally
+```bash
+npm run dev
