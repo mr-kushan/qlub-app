@@ -67,5 +67,4 @@ cd qlub-app
 npm install
 
 ### ▶️ Run Locally
-```bash
 npm run dev
