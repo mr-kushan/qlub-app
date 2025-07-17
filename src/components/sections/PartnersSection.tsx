@@ -40,17 +40,17 @@ const partners = [
 		category: 'Breweries & Sports Bars',
 		logos: [
 			{
-				name: 'Bareburger',
-				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
+				name: "Ranalli's",
+				src: '/assets/US-Restaurants-Breweries-sports-bars-Ranallis-white@2x-1 1.png',
 			},
-			{
-				name: 'Boka Restaurant Group',
-				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
-			},
-			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
 			{
 				name: "Chickie's & Pete's",
 				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
+			},
+			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
+			{
+				name: 'Yards Brewing Company',
+				src: '/assets/US-Restaurants-Breweries-sports-bars-Yards-white@2x-1 1.png',
 			},
 		],
 	},
