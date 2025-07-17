@@ -29,7 +29,7 @@ const PaymentMethodsSection: React.FC = () => (
 				More Tips, More Reviews, And More Data
 			</p>
 
-			<div className="grid grid-cols-1 ">
+			<div className="grid grid-cols-1 md:grid-cols-2 mt-40 lg:grid-cols-4 gap-8">
 				{paymentMethods.map((method, idx) => (
 					<div key={idx} className="w-full h-full flex items-center justify-center bg-gray-100 rounded-xl overflow-hidden">
 						<img
