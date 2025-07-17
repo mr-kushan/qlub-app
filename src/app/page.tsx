@@ -1,4 +1,5 @@
 import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 const bgImage = '/assets/First%20Fold%20Pic.png';
 
@@ -15,6 +16,7 @@ export default function Home() {
       }}
     >
       <Header />
+      <Footer />
     </div>
   );
 }
