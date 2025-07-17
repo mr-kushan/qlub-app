@@ -58,17 +58,17 @@ const partners = [
 		category: 'Hotel Restaurants',
 		logos: [
 			{
+				name: 'The Hoxton',
+				src: '/assets/US-Restaurants-Hotel-restaurants-the-hoxton-white@2x-1 1.png',
+			},
+			{
+				name: 'Mama Shelter',
+				src: '/assets/US-Restaurants-Hotel-restaurants-Mama-shelter-white@2x-1 1.png',
+			},
+			{ name: 'Jojoe', src: '/assets/US-Restaurants-Hotel-restaurants-JoJoe-white@2x-1 1.png' },
+			{
 				name: 'Bareburger',
 				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
-			},
-			{
-				name: 'Boka Restaurant Group',
-				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
-			},
-			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
-			{
-				name: "Chickie's & Pete's",
-				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
 			},
 		],
 	},
