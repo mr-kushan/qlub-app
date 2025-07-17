@@ -4,19 +4,76 @@ import React from 'react';
 const partners = [
 	{
 		category: 'Enterprise',
-		
+		logos: [
+			{
+				name: 'Bareburger',
+				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
+			},
+			{
+				name: 'Boka Restaurant Group',
+				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
+			},
+			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
+			{
+				name: "Chickie's & Pete's",
+				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
+			},
+		],
 	},
 	{
 		category: 'Casual Dining',
+		logos: [
+			{
+				name: 'Bareburger',
+				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
+			},
+			{
+				name: 'Boka Restaurant Group',
+				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
+			},
+			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
+			{
+				name: "Chickie's & Pete's",
+				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
+			},
+		],
 		
 	},
 	{
 		category: 'Breweries & Sports Bars',
-		
+		logos: [
+			{
+				name: 'Bareburger',
+				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
+			},
+			{
+				name: 'Boka Restaurant Group',
+				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
+			},
+			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
+			{
+				name: "Chickie's & Pete's",
+				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
+			},
+		],
 	},
 	{
 		category: 'Hotel Restaurants',
-		
+		logos: [
+			{
+				name: 'Bareburger',
+				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
+			},
+			{
+				name: 'Boka Restaurant Group',
+				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
+			},
+			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
+			{
+				name: "Chickie's & Pete's",
+				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
+			},
+		],
 	},
 ];
 
@@ -35,7 +92,24 @@ const PartnersSection: React.FC = () => (
 					>
 						{category.category}
 					</h3>
-					
+					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 items-center justify-items-center w-full" style={{ padding: 24, width: '100%' }}>
+						{category.logos.map((logo, i) => (
+							<img
+								key={i}
+								src={logo.src}
+								alt={`${logo.name} Logo`}
+								className="h-14 w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+								style={{ maxWidth: '100%' }}
+								onError={(e) => {
+									const t = e.currentTarget;
+									t.onerror = null;
+									t.src = `https://placehold.co/100x50/333333/FFFFFF?text=${encodeURIComponent(
+										logo.name
+									)}`;
+								}}
+							/>
+						))}
+					</div>
 				</div>
 			))}
 		</div>
