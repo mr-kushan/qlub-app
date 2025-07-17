@@ -3,6 +3,7 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import FirstFoldBottomSection from '@/components/sections/FirstFoldBottomSection';
 import PartnersSection from '@/components/sections/PartnersSection';
+import PaymentMethodsSection from '@/components/sections/PaymentMethodsSection';
 
 const bgImage = '/assets/First%20Fold%20Pic.png';
 
@@ -22,6 +23,7 @@ export default function Home() {
       <HeroSection />
       <FirstFoldBottomSection />
       <PartnersSection />
+      <PaymentMethodsSection />
       <Footer />
     </div>
   );
