@@ -4,6 +4,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import FirstFoldBottomSection from '@/components/sections/FirstFoldBottomSection';
 import PartnersSection from '@/components/sections/PartnersSection';
 import PaymentMethodsSection from '@/components/sections/PaymentMethodsSection';
+import BenefitsSection from '@/components/sections/BenefitsSection';
 
 const bgImage = '/assets/First%20Fold%20Pic.png';
 
@@ -24,6 +25,7 @@ export default function Home() {
       <FirstFoldBottomSection />
       <PartnersSection />
       <PaymentMethodsSection />
+      <BenefitsSection />
       <Footer />
     </div>
   );
