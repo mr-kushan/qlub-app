@@ -4,10 +4,10 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="bg-transparent text-white p-4 md:p-6">
-      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
         <div className="flex items-center gap-8">
-          <img src="/assets/logo.svg" alt="Qlub Logo" className="h-8 w-auto" />
-          <nav className="hidden md:flex gap-8 items-center" aria-label="Main navigation">
+          <img src="/assets/logo.svg" alt="Qlub Logo" className="h-8 w-auto mr-12" />
+          <nav className="hidden md:flex gap-12 items-center" aria-label="Main navigation">
             <a href="#" className="hover:text-purple-400 transition-colors">Take Payments</a>
             <a href="#" className="hover:text-purple-400 transition-colors">Power Your Business</a>
             <a href="#" className="hover:text-purple-400 transition-colors">Resources</a>
