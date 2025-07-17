@@ -75,28 +75,23 @@ const partners = [
 ];
 
 const PartnersSection: React.FC = () => (
-	<section className="bg-black flex items-stretch justify-stretch p-0 m-0" style={{ backgroundColor: '#000', margin: 0 }}>
-		<div className="w-full h-full grid grid-cols-2 grid-rows-2 gap-0" style={{ backgroundColor: '#444' }}>
+	<section className="bg-black flex p-0 m-0">
+		<div className="w-full grid grid-cols-2 grid-rows-2">
 			{partners.map((category, idx) => (
 				<div
 					key={idx}
-					className="flex flex-col justify-center items-center border border-gray-700 pt-14 pb-8 px-10"
-					style={{ minHeight: '28vh', minWidth: '50vw', backgroundColor: '#000' }}
+					className="flex flex-col justify-center items-center border border-gray-700 py-14 px-10 bg-black min-h-[28vh] min-w-[50vw]"
 				>
-					<h3
-						className="text-2xl font-semibold text-gray-400 mb-0 w-full text-left pl-2"
-						style={{ paddingLeft: 40, marginBottom: 8 }}
-					>
+					<h3 className="text-2xl font-semibold text-gray-400 w-full text-left pl-10 mb-2">
 						{category.category}
 					</h3>
-					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 items-center justify-items-center w-full" style={{ padding: 24, width: '100%' }}>
+					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full p-6">
 						{category.logos.map((logo, i) => (
 							<img
 								key={i}
 								src={logo.src}
 								alt={`${logo.name} Logo`}
-								className="h-14 w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-								style={{ maxWidth: '100%' }}
+								className="h-12 w-full object-contain filter grayscale hover:grayscale-0 transition duration-300"
 								onError={(e) => {
 									const t = e.currentTarget;
 									t.onerror = null;

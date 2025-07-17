@@ -9,7 +9,7 @@ const stats = [
 
 const FirstFoldBottomSection: React.FC = () => (
   <section className="bg-purple-800 py-8 md:py-10" aria-label="Qlub Benefits">
-    <div className="container mx-auto px-8 md:px-20 lg:px-48">
+    <div className="container mx-auto px-4 md:px-8 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
         <div className="md:col-span-2">
           <h2 className="text-2xl md:text-3xl text-purple-300 mb-2 font-medium">
@@ -19,7 +19,7 @@ const FirstFoldBottomSection: React.FC = () => (
             With Qlub
           </h3>
         </div>
-        <div className="md:col-span-3 flex flex-col md:flex-row justify-end items-center gap-8">
+        <div className="md:col-span-3 flex flex-col md:flex-row justify-end items-center gap-16">
           {stats.map(({ title, subtitle }) => (
             <div key={title} className="px-2">
               <p className="text-xl md:text-3xl font-bold text-white mb-2">{title}</p>
