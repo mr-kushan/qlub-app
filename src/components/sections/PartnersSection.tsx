@@ -24,18 +24,15 @@ const partners = [
 		category: 'Casual Dining',
 		logos: [
 			{
-				name: 'Bareburger',
-				src: '/assets/US-Restaurants-Enterprise-Bareburger@2x%201.png',
+				name: 'Lettuce Entertain You',
+				src: '/assets/US-Restaurants-Enterprise-Lettuce-Entertain-You@2x 1.png',
 			},
+			{ name: 'Ramen-San', src: '/assets/US-Restaurants-Casual-Dining-Ramen-san@2x 1.png' },
 			{
-				name: 'Boka Restaurant Group',
-				src: '/assets/US-Restaurants-Enterprise-Boka-restaurant-Group@2x%201.png',
+				name: 'Portofino',
+				src: '/assets/US-Restaurants-Casual-Dining-Pizzeria-Portofino@2x 1.png',
 			},
-			{ name: 'BrewDog', src: '/assets/US-Restaurants-Enterprise-Brewdog@2x 1.png' },
-			{
-				name: "Chickie's & Pete's",
-				src: '/assets/US-Restaurants-Enterprise-Chickies-Petes@2x 1.png',
-			},
+			{ name: 'Delbar', src: '/assets/US-Restaurants-Casual-Dining-Delbar@2x 1.png' },
 		],
 		
 	},
