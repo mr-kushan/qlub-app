@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
+import FirstFoldBottomSection from '@/components/sections/FirstFoldBottomSection';
 
 const bgImage = '/assets/First%20Fold%20Pic.png';
 
@@ -18,6 +19,7 @@ export default function Home() {
     >
       <Header />
       <HeroSection />
+      <FirstFoldBottomSection />
       <Footer />
     </div>
   );
