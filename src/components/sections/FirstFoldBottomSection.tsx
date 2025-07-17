@@ -1,22 +1,28 @@
 'use client';
 import React from 'react';
 
+const stats = [
+  { title: 'Save 16 Min', subtitle: 'Per Table' },
+  { title: 'Earn 300%', subtitle: 'More Tips' },
+  { title: 'Get 7X', subtitle: 'Positive Google Reviews' },
+];
+
 const FirstFoldBottomSection: React.FC = () => (
-  <section className="bg-purple-800 py-8 md:py-10">
-    <div className="container mx-auto px-20 mx-4">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-center items-center">
-        <div className="text-left md:col-span-2 px-4">
-          <p className="text-2lg md:text-3xl text-purple-300 mb-2">Choose To Take Payments</p>
-          <p className="text-2xl md:text-3xl font-bold text-white">With Qlub</p>
+  <section className="bg-purple-800 py-8 md:py-10" aria-label="Qlub Benefits">
+    <div className="container mx-auto px-8 md:px-20 lg:px-48">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+        <div className="md:col-span-2">
+          <h2 className="text-2xl md:text-3xl text-purple-300 mb-2 font-medium">
+            Choose To Take Payments
+          </h2>
+          <h3 className="text-2xl md:text-3xl font-bold text-white">
+            With Qlub
+          </h3>
         </div>
-        <div className="md:col-span-3 flex flex-col md:flex-row justify-end items-center gap-10 md:gap-30">
-          {[
-            ['Save 16 Min', 'Per Table'],
-            ['Earn 300%', 'More Tips'],
-            ['Get 7X', 'Positive Google Reviews'],
-          ].map(([title, subtitle]) => (
-            <div key={title} className="text-left">
-              <p className="text-xl md:text-3xl font-bold text-white mb-4">{title}</p>
+        <div className="md:col-span-3 flex flex-col md:flex-row justify-end items-center gap-8">
+          {stats.map(({ title, subtitle }) => (
+            <div key={title} className="px-2">
+              <p className="text-xl md:text-3xl font-bold text-white mb-2">{title}</p>
               <p className="text-lg text-purple-300">{subtitle}</p>
             </div>
           ))}
