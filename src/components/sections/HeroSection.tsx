@@ -2,16 +2,19 @@
 import React from 'react';
 
 const HeroSection: React.FC = () => (
-  <section className="relative w-full min-h-screen py-16 md:py-24 bg-center mb-24 mb-40" style={{ backgroundColor: 'transparent' }}>
+  <section
+    className="relative w-full min-h-screen py-16 md:py-24 bg-center mb-24 mb-40"
+    style={{ backgroundColor: 'transparent' }}
+  >
     <div className="mx-auto px-[80px] flex flex-col md:flex-row items-center justify-between relative z-10 gap-0 md:gap-[80px]">
       {/* Left */}
       <div className="md:w-2/5 text-center md:text-left mb-80 md:mb-0">
         <p
           className="text-white-100 text-md mb-15 flex items-center justify-center md:justify-start"
           style={{
-            background: 'rgba(255,255,255,0.25)',
-            borderRadius: '0.75rem',
-            padding: '0.5rem 1rem',
+            background: 'rgba(255,255,255,0.15)',
+            borderRadius: '0.5rem',
+            padding: '0.2rem 1rem 0.2rem 0.2rem',
             display: 'inline-flex',
             width: 'fit-content',
           }}
@@ -19,7 +22,7 @@ const HeroSection: React.FC = () => (
           <span
             className="mr-2 inline-flex items-center justify-center"
             style={{
-              background: 'rgba(255,255,255,0.25)',
+              background: 'rgba(255,255,255,0.15)',
               borderRadius: '0.5rem',
               padding: '0.15rem',
             }}
@@ -27,12 +30,12 @@ const HeroSection: React.FC = () => (
             <img
               src="/assets/sparkle 2.svg"
               alt="Sparkle"
-              className="w-5 h-5"
+              className="w-6 h-6"
             />
           </span>
           Unlock Comfort And Convenience
         </p>
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
           <span className="font-normal text-white">ENHANCE YOUR </span>
           <span className="font-extrabold text-white">RESTAURANT EXPERIENCE</span>
         </h1>
@@ -66,9 +69,8 @@ const HeroSection: React.FC = () => (
             alt="Woman using Qlub app"
             className="w-full max-w-md md:max-w-lg rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
             onError={(e) => {
-              const t = e.currentTarget;
-              t.onerror = null;
-              t.src = 'https://placehold.co/600x400/333333/FFFFFF?text=Hero+Image';
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = 'https://placehold.co/600x400/333333/FFFFFF?text=Hero+Image';
             }}
           />
         </div>
