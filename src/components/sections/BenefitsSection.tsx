@@ -20,8 +20,8 @@ const BenefitsSection: React.FC = () => (
             className="text-purple text-md mb-15 flex items-center justify-center md:justify-start"
             style={{
               background: 'rgba(217, 156, 234, 0.25)',
-              borderRadius: '0.75rem',
-              padding: '0.5rem 1rem',
+              borderRadius: '0.5rem',
+              padding: '0.2rem 1rem 0.2rem 0.2rem',
               display: 'inline-flex',
               width: 'fit-content',
             }}
