@@ -1,6 +1,21 @@
 'use client';
 import React from 'react';
 
+const paymentMethods = [
+	{
+		imageUrl: '/assets/Frame 2608862.png',
+	},
+	{
+		imageUrl: '/assets/Frame 2608863.png',
+	},
+	{
+		imageUrl: '/assets/Frame 2608864.png',
+	},
+	{
+		imageUrl: '/assets/Frame 2608865.png',
+	},
+];
+
 const PaymentMethodsSection: React.FC = () => (
 	<section className="bg-white px-8 md:px-16 md:py-24">
 		<div className="container mx-auto px-2 md:px-8">
@@ -14,7 +29,17 @@ const PaymentMethodsSection: React.FC = () => (
 				More Tips, More Reviews, And More Data
 			</p>
 
-			
+			<div className="grid grid-cols-1 ">
+				{paymentMethods.map((method, idx) => (
+					<div key={idx} className="w-full h-full flex items-center justify-center bg-gray-100 rounded-xl overflow-hidden">
+						<img
+							src={method.imageUrl}
+							alt={`Payment method ${idx + 1}`}
+							className="object-cover w-full h-full"
+						/>
+					</div>
+				))}
+			</div>			
 		</div>
 	</section>
 );
